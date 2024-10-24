@@ -1,0 +1,150 @@
+.product-card {
+  width: 80%;
+  height: 18rem;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.product-card__imgCont {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+}
+
+.product-card__imgCont img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card__contentCont {
+  width: 100%;
+  color: black;
+  background-color: #e1e1e1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: bold;
+  gap: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.product-card__contentCont h3 {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #094b77;
+}
+
+.product-card__subtitle {
+  color: #444;
+}
+
+.product-card.row-rev .product-card__contentCont {
+  align-items: flex-end;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
+}
+
+.btn--learn-more {
+  font-size: 1rem;
+  width: 50%;
+  padding: 0.7rem;
+  border: 1px solid #083c5e;
+  border-radius: 12px;
+  color: #083c5e;
+}
+
+.btn--learn-more:hover .btn-icon {
+  color: white;
+  transform: scale(1.2);
+}
+
+.btn--learn-more:hover {
+  background-color: #083c5e;
+  color: white;
+}
+
+@media only screen and (max-width: 940px) {
+  .product-card,
+  .product-card.row-rev {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .product-card__imgCont {
+    height: 350px;
+  }
+
+  .product-card__contentCont,
+  .product-card.row-rev .product-card__contentCont {
+    padding: 1rem;
+    min-height: 250px;
+    align-items: center;
+  }
+
+  .product-card__subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .product-card__subtitle {
+    font-size: 1rem;
+  }
+
+  .btn--learn-more {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .product-card__imgCont {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .product-card__contentCont,
+  .product-card.row-rev .product-card__contentCont {
+    min-height: 200px;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .product-card__subtitle {
+    font-size: 0.8rem;
+  }
+
+  .btn--learn-more {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  .product-card {
+    height: 20rem;
+  }
+
+  .product-card__subtitle {
+    font-size: 1rem;
+  }
+
+  .btn--learn-more {
+    font-size: 1.4rem;
+  }
+}

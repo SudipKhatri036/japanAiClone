@@ -1,0 +1,42 @@
+.faq {
+  padding: 2rem 4rem;
+}
+
+.faq .horizontal-line {
+  margin-bottom: 3rem;
+}
+
+.faq__container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  color: #444;
+}
+
+.faq__question {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    padding: 1rem;
+  }
+
+  .faq h2 {
+    font-size: 1.5rem;
+  }
+  .faq__question {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .faq__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq__answer {
+    width: 100%;
+  }
+}

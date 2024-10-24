@@ -1,0 +1,141 @@
+/* .form {
+  width: 40%;
+  text-align: left;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.form label {
+  display: inline-block;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-block: 1rem;
+}
+
+.form-required {
+  color: red;
+}
+
+.form input {
+  width: 100%;
+  display: block;
+  font-size: 2vw;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid #555;
+}
+
+.form input:active {
+  border: 1px solid blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+
+  .form label {
+    font-size: 2vh;
+  }
+
+  .form input {
+    font-size: 2vh;
+  }
+} */
+
+/* ------------------------------------------------ */
+
+/* From Uiverse.io by Smit-Prajapati */
+.orange {
+  color: #ff7a01;
+}
+
+.form {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #083c5e;
+  padding: 30px;
+  border-left: 5px solid #ff7a01;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+}
+
+.form .form-container .input {
+  color: white;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form .form-container .input:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form .form-container .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: white;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .form-container .textarea:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container .submit-button {
+  flex-basis: 30%;
+  background: white;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.button-container .submit-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+
+@media only screen and (min-width: 1400px) {
+  input,
+  .textarea {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    margin: 0;
+  }
+}

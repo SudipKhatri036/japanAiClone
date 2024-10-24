@@ -1,0 +1,32 @@
+.inquiry-area {
+  width: 100%;
+  background-color: #404040;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.inquiry-area h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.inquiry-area .btn--inquiry-btn {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background-color: #083c5e;
+  color: white;
+  border: 2px solid #083c5e;
+}
+
+.inquiry-area .btn--inquiry-btn:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .inquiry-area .btn--inquiry-btn {
+    font-size: 1rem;
+  }
+}

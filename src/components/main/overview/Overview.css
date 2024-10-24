@@ -1,0 +1,36 @@
+.overview {
+  padding-block: 1rem;
+  color: black;
+  text-align: center;
+
+  padding-inline: 2rem;
+}
+
+.overview__content {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.overview__content span {
+  display: block;
+  margin-block: 0.8rem;
+}
+
+@media only screen and (min-width: 1400px) {
+  .overview__content {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .overview {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .overview__content {
+    font-size: 0.7rem;
+  }
+}
